@@ -1,0 +1,15 @@
+from telegram import InlineKeyboardButton
+
+button1 = InlineKeyboardButton(text='⬅️ Regresar', callback_data='back')
+button2 = InlineKeyboardButton(text='❌ Eliminar videos', callback_data='delvideo')
+button3 = InlineKeyboardButton(text='📈 HDD', callback_data='freespace')
+button4 = InlineKeyboardButton(text='📈 RAM', callback_data='freememory')
+button5 = InlineKeyboardButton(text='📈 CPU (4s)', callback_data='freecpu')
+button6 = InlineKeyboardButton(text='⚙️ Administrar servicios', callback_data='services')
+button7 = InlineKeyboardButton(text='▶️ Iniciar', callback_data='startservices')
+button8 = InlineKeyboardButton(text='⏹️ Detener', callback_data='stopservices')
+button9 = InlineKeyboardButton(text='🔄 Reiniciar', callback_data='restartservices')
+button10 = InlineKeyboardButton(text='⬅️ Regresar', callback_data='services')
+button11 = InlineKeyboardButton(text='🚫 Cancelar', callback_data='cancel')
+button12 = InlineKeyboardButton(text='💡 En linea desde', callback_data='boot_time')
+button13 = InlineKeyboardButton(text='👨‍💻 Users conectados', callback_data='list_users')
