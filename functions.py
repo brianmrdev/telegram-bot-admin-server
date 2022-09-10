@@ -89,13 +89,13 @@ def list_users(update, context):
     msj_list_users = ''    
     users_list = psutil.users()
     if len(users_list) == 0:
-        msj_list_users += 'No hay usuarios conectados en estos momentos'
+        return 'No hay usuarios conectados en estos momentos'
     else:
         for user in users_list:
             usuario = ''
             usuario += 'Usuario: {} \n'.format(user.name)
             usuario += 'Host: {} \n'.format(user.host)
-            usuario += 'Conectado desde: {} \n--------'.format(str(datetime.fromtimestamp(float(user.started))))
+            usuario += 'Conectado desde: {} \n--------\n'.format(str(datetime.fromtimestamp(float(user.started))))
             msj_list_users += str(usuario)
         
         return msj_list_users
